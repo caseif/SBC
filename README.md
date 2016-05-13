@@ -5,6 +5,17 @@ manner within a single byte blob. The full specification for the format may be f
 
 This repository will also house utilities for working with the format in the near future.
 
+## What SBC *Isn't*
+Here is a small list of things SBC is **not** designed to do:
+
+- Store metadata for blobs
+  - SBC is designed exclusively to hold binary data, without the bells and whistles. The above task is more suited for a
+    multi-purpose format such as [NBT](http://wiki.vg/NBT).
+- Compress data
+  - SBC is literally just a container format. The data chunk will be slightly larger than all input data. However, it
+    should be trivial to run a data chunk through GZIP.
+- Your taxes
+
 ## Why?
 Partly because I need a format for storing byte data compactly, and partly because it gives me the opportunity to
 practice my skill in various programming languages.
