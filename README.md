@@ -1,4 +1,4 @@
-# SBC
+\# SBC
 The **S**tructured **B**lob **C**ontainer format is a specification for storing arbitrary binary data in a hierarchical
 manner within a single byte blob. The full specification for the format may be found in the
 [wiki](https://github.com/caseif/SBC/wiki/Specification) of this repository.
@@ -13,7 +13,7 @@ Here is a small list of things SBC is **not** designed to do:
     multi-purpose format such as [NBT](http://wiki.vg/NBT).
 - Compress data
   - SBC is literally just a container format. The data chunk will be slightly larger than all input data. However, it
-    should be trivial to run a data chunk through GZIP.
+    should be trivial to run a data chunk through `gzip`.
 - Your taxes
 
 ## Why?
